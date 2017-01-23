@@ -8,10 +8,16 @@
 #headerText {
     font-size: 500%;
 }
+
 #menuDiv{
     width: 100%;
     margin: 0px;
     padding: 0px;
+}
+
+#navigation {
+    border-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 #menu {
@@ -27,9 +33,28 @@
     font-size: 150%;
 }
 
+#about {
+    background-color: deeppink;
+    width: 100vw;
+    height: 100vh;
+}
 
+#projects {
+    background-color: mediumturquoise;
+    width: 100vw;
+    height: 100vh;
+}
+
+#contact {
+    width: 100vw;
+    height: 100vh;
+    background-color: #3c763d;
+}
 @media only screen and (max-width: 767px) {
     #headerText {
         font-size: 400%;
     }
+}
+h2 {
+    text-align: center;
 }
