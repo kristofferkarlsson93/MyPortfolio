@@ -1,3 +1,6 @@
+/*body {
+    overflow: hidden;
+}*/
 #headerDiv{
     text-align: center;
     background-color: deepskyblue;
@@ -31,6 +34,13 @@
     margin: 0px;
     padding: 0px;
     font-size: 150%;
+}
+
+#mainContent {
+    width: 300%;
+    height: 100%;
+    padding-left: 0px;
+   /* overflow-x: auto;*/
 }
 
 #about {
