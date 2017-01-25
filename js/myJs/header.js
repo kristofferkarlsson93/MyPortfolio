@@ -1,4 +1,6 @@
-window.onload = function () {
+
+
+/*window.onload = function () {
     var menu = document.getElementById("menuDiv");
     menu.onclick = changeHeight;
 }
@@ -21,4 +23,4 @@ function resetJumbo() {
     alert("Herejk");
     var header = document.getElementById("jumboDiv");
     header.style.height = "100%";
-}
+}*/

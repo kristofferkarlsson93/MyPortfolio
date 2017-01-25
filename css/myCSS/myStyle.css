@@ -1,12 +1,12 @@
-body {
-    height: 100vh;
+html, body {
+    height: 100%;
     overflow-x: hidden;
 }
 
 #headerDiv {
     width:100vw;
-
 }
+
 #jumboDiv{
     text-align: center;
     background-color: deepskyblue;
@@ -17,12 +17,10 @@ body {
 #jumboContent {
     vertical-align: middle;
     text-align:center;
-
 }
 
 #headerText {
     font-size: 500%;
-
 }
 
 #menuDiv{
