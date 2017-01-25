@@ -18,7 +18,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
-
+    <script src="js/myJs/header.js"></script>
 
 </head>
 
@@ -26,32 +26,36 @@
 
 
 <body>
-    <div id="headerDiv" class="jumbotron">
-        <div class="container-fluid">
-            <h1 id="headerText">Kristoffer Karlsson</h1>
+    <div id="headerDiv">
+        <a href="#about"><div id="jumboDiv" class="jumbotron">
+            <div id="jumboContent" class="container-fluid">
+                <h1 id="headerText">Kristoffer Karlsson</h1>
+            </div>
+        </div></a>
+        <div id="menuDiv" class="container-fluid">
+            <nav id="navigation" class="navbar navbar-static-top">
+                <ul id="menu" class="nav navbar-nav">
+                    <li class="active col-md-4"><a href="#about">About</a></li>
+                    <li class="col-md-4"><a href="#projects">Projects</a></li>
+                    <li class="col-md-4"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-    <div id="menuDiv" class="container-fluid">
-        <nav id="navigation" class="navbar navbar-default">
-            <ul id="menu" class="nav navbar-nav">
-                <li class="active col-md-4"><a href="#about">About</a></li>
-                <li class="col-md-4"><a href="#projects">Projects</a></li>
-                <li class="col-md-4"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </div>
 
     <div id="mainContent" class="container-fluid">
-        <div class="row">
-            <div id="about" class="col-md-6">
-                <h2>About</h2>
+        <div id="scrollable">
+            <div class="row">
+                <div id="about" class="col-md-4 menuItem">
+                    <h2>About</h2>
+                </div>
+                <div id="projects" class="col-md-4 menuItem">
+                    <h2>Projects</h2>
+                </div>
+                <div id="contact" class="col-md-4 menuItem">
+                    <h2>Contact</h2>
+                </div>
             </div>
-            <div id="projects" class="col-md-6">
-                <h2>Projects</h2>
-            </div>
-           <!-- <div id="contact" class="container-fluid">
-                <h2>Contact</h2>
-            </div>-->
         </div>
     </div>
 

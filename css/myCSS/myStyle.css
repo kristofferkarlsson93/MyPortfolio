@@ -1,15 +1,28 @@
-/*body {
-    overflow: hidden;
-}*/
-#headerDiv{
+body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#headerDiv {
+    width:100vw;
+
+}
+#jumboDiv{
     text-align: center;
     background-color: deepskyblue;
     border-bottom: 0px;
     margin-bottom: 0px;
 }
 
+#jumboContent {
+    vertical-align: middle;
+    text-align:center;
+
+}
+
 #headerText {
     font-size: 500%;
+
 }
 
 #menuDiv{
@@ -37,10 +50,19 @@
 }
 
 #mainContent {
-    width: 300%;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#scrollable {
+    width: 400%;
+    height: 100vh;
     padding-left: 0px;
-   /* overflow-x: auto;*/
+    /*overflow-x: auto;
+    display: inline-block;
+    white-space: nowrap;*/
 }
 
 #about {
@@ -56,10 +78,11 @@
 }
 
 #contact {
+    background-color: #3c763d;
     width: 100vw;
     height: 100vh;
-    background-color: #3c763d;
 }
+
 @media only screen and (max-width: 767px) {
     #headerText {
         font-size: 400%;
