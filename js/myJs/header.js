@@ -1,5 +1,12 @@
 
 
+window.onscroll = function() {
+    testFunc();
+}
+
+function testFunc() {
+    console.log("hej");
+}
 /*window.onload = function () {
     var menu = document.getElementById("menuDiv");
     menu.onclick = changeHeight;
