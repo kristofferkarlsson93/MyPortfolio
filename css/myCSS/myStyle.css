@@ -1,17 +1,14 @@
 html, body {
-    height: 100%;
-    /*overflow-x: hidden;*/
+    width: 100vw;
+    height: 100vh;
 }
 
-
-
 #headerDiv {
-    width:100vw;
-    -webkit-transition: height 2s; /* Safari */
-    transition: height 2s;
+
 }
 
 #jumboDiv{
+    height: 30%;
     text-align: center;
     background-color: deepskyblue;
     border-bottom: 0px;
@@ -88,4 +85,14 @@ html, body {
 }
 h2 {
     text-align: center;
+}
+
+.changeOnDownScroll {
+    animation-name: onDownScroll;
+    animation-duration: 1s;
+}
+
+@keyframes onDownScroll {
+    from {height: 30%;}
+    to {height: 15%;}
 }

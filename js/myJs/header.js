@@ -1,33 +1,23 @@
-
-
+var previousPosition = window.pageYOffset || document.documentElement.scrollTop;
+var scrollFlag = false;
 window.onscroll = function() {
-    testFunc();
+    changeHeaderSize()
 }
 
-function testFunc() {
-    console.log("hej");
-}
-/*window.onload = function () {
-    var menu = document.getElementById("menuDiv");
-    menu.onclick = changeHeight;
-}
-
-function changeHeight() {
-    var header = document.getElementById("jumboContent");
-    header.style.height="10px";
-    header.style.fontSize = "50%";
-    var text = document.getElementById("headerText");
-    text.verticalAlign = "middle";
-    checkHeaderClick();
-}
-
-function checkHeaderClick() {
+function changeHeaderSize() {
+    var currentPosition = window.pageYOffset || document.documentElement.scrollTop; //offset is the one doing shit
     var header = document.getElementById("jumboDiv");
-    header.onclick = resetJumbo;
+    if (previousPosition < currentPosition && !scrollFlag) {
+        console.log('scrolling down');
+        header.className += " changeOnDownScroll";
+        scrollFlag = true;
+    } else if(previousPosition > currentPosition && scrollFlag){
+        scrollFlag = false
+        header.className = "jumbotron";
+        console.log('scrolling up');
+    }
+
+    previousPosition = currentPosition;
+
 }
 
-function resetJumbo() {
-    alert("Herejk");
-    var header = document.getElementById("jumboDiv");
-    header.style.height = "100%";
-}*/
