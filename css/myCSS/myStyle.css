@@ -3,15 +3,18 @@ html, body {
 }
 
 #headerDiv {
-
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
 }
 
 #jumboDiv{
     height: 30%;
+    width: auto;
     text-align: center;
     background-color: deepskyblue;
     border-bottom: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 
 #jumboContent {
@@ -63,6 +66,8 @@ html, body {
 .page {
     width: 100vw;
     height: 100vh;
+    display: inline-block; /*remove this for old version*/
+
 }
 
 #about {
