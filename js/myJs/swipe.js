@@ -2,9 +2,26 @@
  * Created by Kristoffer on 2017-02-23.
  */
 
-$(document).ready(function() {
-    $(".page").on("dragstart", function() {
-        console.log("swipe");
+$(function() {
+    //Enable swiping...
+    $("#mainContent").swipe( {
+        //Generic swipe handler for all directions
+        swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+            if($(this).scrollLeft() < $(window).width() * 2){
+                $("#mainContent").animate({
+                    scrollLeft: $("#mainContent").scrollLeft() + $(window).width()
+                })
+            }
 
-    })
-})
+
+        },
+        swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+            console.log("right");
+            $("#mainContent").animate({
+                scrollLeft: $("#mainContent").scrollLeft() - $(window).width()
+            })
+        },
+        //Default is 75px, set to 0 for demo so any distance triggers swipe
+        threshold:75
+    });
+});

@@ -7,21 +7,12 @@ $(document).ready(function() {
 
         //On bigscreen-devices.
 
-        console.log($(window).width())
         var $link = $(this).attr("href");
+        console.log($(this))
         $("#mainContent").animate({
             scrollLeft: $("#mainContent").scrollLeft() + $($link).offset().left
         }, 500);
         event.preventDefault();
 
-        /*
-        //On smaller screens.
-        else {
-            var $link = $(this).attr("href");  //Takes the link
-            $("#mainContent").animate({ //animates the scrolling
-                scrollTop: $("#mainContent").scrollTop() + $($link).offset().top
-            }, 500);
-            event.preventDefault();
-        }*/
     });
 });

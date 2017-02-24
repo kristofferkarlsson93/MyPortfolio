@@ -18,17 +18,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
+
     <script src="js/myJs/header.js"></script>
     <script src="js/myJs/smoothScroll.js"></script>
     <script src="js/myJs/swipe.js"></script>
-
-
+    <script src ="js/jquery.touchSwipe.js"></script>
 </head>
 
 
 
 
-<body>
+<body >
     <div id="headerDiv">
         <a href="#about"><div id="jumboDiv" class="jumbotron">
             <div id="jumboContent" class="container fluid">
@@ -38,7 +38,7 @@
         <div id="menuDiv" class="container-fluid">
             <nav id="navigation" class="navbar navbar-default">
                 <ul id="menu" class="nav navbar-nav ">
-                    <li class="active col-md-4 "><a href="#about" class="menuItem">About</a></li>
+                    <li class="col-md-4"><a href="#about" class="menuItem">About</a></li>
                     <li class="col-md-4"><a href="#projects" class="menuItem">Projects</a></li>
                     <li class="col-md-4"><a href="#contact" class="menuItem">Contact</a></li>
                 </ul>
@@ -46,7 +46,7 @@
         </div>
     </div>
 
-    <div id="mainContent" class="container">
+    <div id="mainContent" class="container main" data-spy="scroll" data-target=".navbar-default">
         <div id="scrollable">
             <div class="row">
                 <div id="about" class="col-md-4 page">
