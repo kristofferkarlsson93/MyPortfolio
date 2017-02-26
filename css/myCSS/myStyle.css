@@ -24,7 +24,7 @@ html, body {
 }
 
 #headerText {
-    font-size: 800%;
+    font-size: 500%;
 }
 
 #menuDiv{
@@ -52,10 +52,10 @@ html, body {
 }
 
 #mainContent {
+    position: relative;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
-
+    overflow-x: scroll;
 }
 
 #scrollable {
@@ -81,6 +81,21 @@ html, body {
 
 #contact {
     background-color: #3c763d;
+
+}
+
+#jokeDiv {
+    text-align: center; /*to center button*/
+    width: auto;
+    margin: auto;
+}
+
+#contact form {
+    width: 50%;
+    margin: auto;
+}
+.buttonClass {
+    font-size: 30px;
 }
 
 @media only screen and (max-width: 767px) {

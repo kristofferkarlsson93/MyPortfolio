@@ -23,6 +23,7 @@
     <script src="js/myJs/smoothScroll.js"></script>
     <script src="js/myJs/swipe.js"></script>
     <script src ="js/jquery.touchSwipe.js"></script>
+    <script src="js/myJs/showContacts.js"></script>
 </head>
 
 
@@ -36,7 +37,7 @@
             </div>
         </div></a>
         <div id="menuDiv" class="container-fluid">
-            <nav id="navigation" class="navbar navbar-default">
+            <nav id="navigation" class="navbar navbar-default navbar-fixed">
                 <ul id="menu" class="nav navbar-nav ">
                     <li class="col-md-4"><a href="#about" class="menuItem">About</a></li>
                     <li class="col-md-4"><a href="#projects" class="menuItem">Projects</a></li>
@@ -46,7 +47,7 @@
         </div>
     </div>
 
-    <div id="mainContent" class="container main" data-spy="scroll" data-target=".navbar-default">
+    <div id="mainContent" class="container" >
         <div id="scrollable">
             <div class="row">
                 <div id="about" class="col-md-4 page">
@@ -57,6 +58,17 @@
                 </div>
                 <div id="contact" class="col-md-4 page">
                     <h2>Contact</h2>
+                    <div id="jokeDiv">
+                        <form id="jokeForm">
+                            <h2> To know my contacts you have to be funny.
+                                What is the answer to the joke?</h2> <br>
+                            <h3>I am a machine that turns coffe into code. What am I?</h3>
+                            <input id="answerField" type="text" class="form-control" value=" " placeholder="Answer goes here">
+                            <br>
+                            <input class="buttonClass" type="submit">
+                        </form>
+                    </div>
+                    <div id="contactInfo"> </div>
                 </div>
             </div>
         </div>

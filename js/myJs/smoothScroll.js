@@ -8,7 +8,6 @@ $(document).ready(function() {
         //On bigscreen-devices.
 
         var $link = $(this).attr("href");
-        console.log($(this))
         $("#mainContent").animate({
             scrollLeft: $("#mainContent").scrollLeft() + $($link).offset().left
         }, 500);

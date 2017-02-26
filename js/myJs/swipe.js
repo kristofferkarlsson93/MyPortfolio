@@ -16,7 +16,6 @@ $(function() {
 
         },
         swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
-            console.log("right");
             $("#mainContent").animate({
                 scrollLeft: $("#mainContent").scrollLeft() - $(window).width()
             })
