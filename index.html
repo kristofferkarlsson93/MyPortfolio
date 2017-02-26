@@ -31,13 +31,21 @@
 
 <body >
     <div id="headerDiv">
-        <a href="#about"><div id="jumboDiv" class="jumbotron">
+        <div id="jumboDiv" class="jumbotron">
             <div id="jumboContent" class="container fluid">
-                <h1 id="headerText">Kristoffer Karlsson</h1>
+                <div id="nameDiv"><h1 id="headerText">Kristoffer Karlsson</h1></div>
+                <div id="socialMedia">
+                    <a href="https://github.com/kristofferkarlsson93">
+                        <img class="linkpic" src="media/GitHub-Mark-64px.png" alt="gitlink">
+                    </a>
+                    <a href="https://www.linkedin.com/in/kristoffer-karlsson-6b14b4126">
+                        <img id="linkedpic" class="linkpic" src="media/linkedin.png" alt="linkedinlink">
+                    </a>
+                </div>
             </div>
-        </div></a>
+        </div>
         <div id="menuDiv" class="container-fluid">
-            <nav id="navigation" class="navbar navbar-default navbar-fixed">
+            <nav id="navigation" class="navbar navbar-inverse navbar-fixed">
                 <ul id="menu" class="nav navbar-nav ">
                     <li class="col-md-4"><a href="#about" class="menuItem">About</a></li>
                     <li class="col-md-4"><a href="#projects" class="menuItem">Projects</a></li>
@@ -59,12 +67,11 @@
                 <div id="contact" class="col-md-4 page">
                     <h2>Contact</h2>
                     <div id="jokeDiv">
+                        <h2> To know my contacts you have to be funny.
+                            What is the answer to the joke?</h2>
+                        <h3>I am a machine that turns coffe into code. What am I?</h3>
                         <form id="jokeForm">
-                            <h2> To know my contacts you have to be funny.
-                                What is the answer to the joke?</h2> <br>
-                            <h3>I am a machine that turns coffe into code. What am I?</h3>
                             <input id="answerField" type="text" class="form-control" value=" " placeholder="Answer goes here">
-                            <br>
                             <input class="buttonClass" type="submit">
                         </form>
                     </div>

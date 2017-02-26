@@ -20,17 +20,18 @@ function callServer() {
 
 function checkAnswer(respons) {
     console.log(respons)
-    if(respons == "correct"){
-        addContacts()
-
+    if(respons == "wrong"){
+        return false;
+    }else {
+        addContacts(respons)
     }
 }
 
-function addContacts() {
+function addContacts(response) {
     removeQuestion()
     var parent = document.getElementById("contactInfo");
     var email = document.createElement("H2");
-    email.textContent = "kristoffer.karlsson93@hotmail.com"
+    email.textContent = response
     parent.appendChild(email);
 }
 

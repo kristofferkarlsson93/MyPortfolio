@@ -9,8 +9,9 @@ def index():
 
 @app.route("/checkAnswer/<answer>")
 def checkAnswer(answer):
+    email = "kristoffer.karlsson93@hotmail.com"
     if answer.lower() == "programmer":
-        return "correct"
+        return email
     return "wrong"
 
 if __name__ == "__main__":
