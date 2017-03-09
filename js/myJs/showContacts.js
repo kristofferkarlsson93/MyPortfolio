@@ -10,7 +10,7 @@ window.onload = function() {
 function callServer() {
     var answer = document.getElementById("answerField").value;
     $.ajax({
-        type: "GET",
+        type: "POST",
         url: "http://localhost:3000/checkAnswer/"+ answer,
         success: checkAnswer
 

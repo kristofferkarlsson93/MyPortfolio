@@ -24,6 +24,7 @@
     <script src="js/myJs/swipe.js"></script>
     <script src ="js/jquery.touchSwipe.js"></script>
     <script src="js/myJs/showContacts.js"></script>
+    <script src="js/myJs/showCourses.js"></script>
 </head>
 
 
@@ -33,8 +34,11 @@
     <div id="headerDiv">
         <div id="jumboDiv" class="jumbotron">
             <div id="jumboContent" class="container fluid">
+                <div id="selfieDiv" class="hideOnPhone">
+                    <img id="profilePic" class="" src="media/profilecut.png" alt="profile picture">
+                </div>
                 <div id="nameDiv"><h1 id="headerText">Kristoffer Karlsson</h1></div>
-                <div id="socialMedia">
+                <div id="socialMedia" class="hideOnPhone">
                     <a href="https://github.com/kristofferkarlsson93">
                         <img class="linkpic" src="media/GitHub-Mark-64px.png" alt="gitlink">
                     </a>
@@ -60,22 +64,129 @@
             <div class="row">
                 <div id="about" class="col-md-4 page">
                     <h2>About</h2>
+                    <div id="aboutContent" class="pageContent">
+                        <div id="aboutRowOne" class="row">
+                            <div id="aboutText" class="col-md-8">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.</p>
+                            </div>
+                            <div id="aboutPic" class="col-md-4">
+                                <img id="bigProfilePic" src="media/profile.jpeg" class="img-circle">
+                            </div>
+                        </div>
+                        <div id="factDIv" class="row">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#skills">Skills & knowledge</a></li>
+                                <li><a data-toggle="tab" href="#courses">My courses</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="skills" class="tab-pane fade in active">
+                                    <h3>My knowledge</h3>
+                                    <p>To be added</p>
+                                </div>
+                                <div id="courses" class="tab-pane fade">
+                                    <h3>All my Courses</h3>
+                                    <p>To be added</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="projects" class="col-md-4 page">
                     <h2>Projects</h2>
+                    <div id="project1" class="pageContent project row">
+                        <div class="projectPicDiv col-md-4">
+                           <a href="https://www8.cs.umu.se/~kv14kkn/FlyTheFlopper/Assignment3/bin/">
+                               <img src="media/projectPics/flutterFlopper.PNG" class="projectPic">
+                           </a>
+                        </div>
+                        <div class="projectTextDiv col-md-5">
+                            <h4>Fly The Flutting Flutter Flopper</h4>
+                            <p>During the course 'Spelutveckling med Flash och ActionScript' (Game development with
+                                Flash and ActionScript) I made a game in Starling as a final project. </p>
+                        </div>
+                        <div class="projectLink col-md-3">
+                            <a href="https://github.com/kristofferkarlsson93/FLyTheFlapper-Assignment-3---ActionScript-">
+                                <img class="linkpic gitProjectLink" src="media/GitHub-Mark-120px-plus.png" alt="gitlink">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="project2" class="pageContent project row">
+                        <div class="projectPicDiv col-md-4">
+                            <a href="#">
+                                <img src="media/projectPics/placeholderForPage.PNG" class="projectPic">
+                            </a>
+                        </div>
+                        <div class="projectTextDiv col-md-5">
+                            <h4>My portfolio</h4>
+                            <p>This page is made with Bootstrap. </p>
+                        </div>
+                        <div class="projectLink col-md-3">
+                            <a href="https://github.com/kristofferkarlsson93/MyPortfolio">
+                                <img class="linkpic gitProjectLink" src="media/GitHub-Mark-120px-plus.png" alt="gitlink">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="project3" class="pageContent project row">
+                        <div class="projectPicDiv col-md-4">
+                            <a href="#">
+                                <img id="vallaloggenPic" src="media/projectPics/vallaloggen.PNG" class="projectPic">
+                            </a>
+                        </div>
+                        <div class="projectTextDiv col-md-5">
+                            <h4>Vallaloggen</h4>
+                            <p>This page is no longer in the makeing. <br>
+                            As a cross country skier I spend a lot of time waxing, and finking about wax.
+                            I wanted a place to share and store my wax-reports, and also look at other peoples
+                            reports, so I started this project during the summer of 2016, but I have not
+                            finished it. When I have more time I will redo this project.</p>
+                        </div>
+                        <div class="projectLink col-md-3">
+                            <a href="https://github.com/kristofferkarlsson93/Vallaloggen">
+                                <img class="linkpic gitProjectLink" src="media/GitHub-Mark-120px-plus.png" alt="gitlink">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="project4" class="pageContent project row">
+                        <div class="projectPicDiv col-md-4">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-folder-open glyf projectPic"></span>
+                            </a>
+                        </div>
+                        <div class="projectTextDiv col-md-5">
+                            <h4>Other projects</h4>
+                            <p>
+                                I have alot of other code / smaller projects on github. Check it out!</p>
+                        </div>
+                        <div class="projectLink col-md-3">
+                            <a href="https://github.com/kristofferkarlsson93?tab=repositories">
+                                <img class="linkpic gitProjectLink" src="media/GitHub-Mark-120px-plus.png" alt="gitlink">
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div id="contact" class="col-md-4 page">
                     <h2>Contact</h2>
-                    <div id="jokeDiv">
-                        <h2> To know my contacts you have to be funny.
-                            What is the answer to the joke?</h2>
-                        <h3>I am a machine that turns coffe into code. What am I?</h3>
-                        <form id="jokeForm">
-                            <input id="answerField" type="text" class="form-control" value=" " placeholder="Answer goes here">
-                            <input class="buttonClass" type="submit">
-                        </form>
+                    <div id="contactContent" class="pageContent row">
+                        <div id="jokeDiv" class="col-md-12">
+                            <h2> To know my contacts you have to be funny.
+                                What is the answer to the joke?</h2>
+                            <h3>I am a machine that turns coffe into code. What am I?</h3>
+                            <form id="jokeForm">
+                                <input id="answerField" type="text" class="form-control" value=" " placeholder="Answer goes here">
+                                <input class="buttonClass" type="submit">
+                            </form>
+                        </div>
+                        <div id="contactInfo"> </div>
                     </div>
-                    <div id="contactInfo"> </div>
+
                 </div>
             </div>
         </div>

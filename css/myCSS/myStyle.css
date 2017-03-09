@@ -15,6 +15,8 @@ html, body {
     border-bottom: 0px;
     margin: auto;
     text-align: center;
+    padding-bottom: 0px;
+    padding-top: 10px;
 }
 
 #jumboContent {
@@ -22,12 +24,18 @@ html, body {
 
 }
 
+#profilePic {
+    height: 160px;
+    width: auto; /*130*/
+    float: left;
+}
+
 #nameDiv {
     display: inline-block;
     text-align: center;
     border: 0px;
     margin: 0 auto;
-    padding: 0px;
+    padding-top: 40px;
 }
 
 
@@ -36,7 +44,7 @@ html, body {
     border: 0px;
     margin: 0px;
     padding: 0px;
-    padding-left: 100px;
+    padding-left: 0px;
 }
 
 #socialMedia {
@@ -44,6 +52,7 @@ html, body {
     display: inline-block;
     float: right;
     vertical-align: top;
+    padding-top: 40px;
 }
 
 .linkpic {
@@ -77,12 +86,18 @@ html, body {
     text-align: center;
     font-weight: bold;
     margin-left: 0px;
+
 }
 
 #menu li {
     margin: 0px;
     padding: 0px;
     font-size: 150%;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #3b71a5;
+    /*#025aa5*/
 }
 
 #mainContent {
@@ -100,14 +115,93 @@ html, body {
 .page {
     width: 100vw;
     height: 100vh;
-    display: inline-block; /*remove this for old version*/;
+    display: inline-block;
+}
+
+.pageContent {
+    width: 75%;
+    height: auto;
+    background-color: #769cc1;
+    margin: 0 auto;
+    box-shadow: 5px 5px 25px 5px #888888;
+}
+
+#aboutContent {
+    padding-top: 60px;
+    padding-left: 60px;
+    color: #292b2c;
+}
+
+#aboutPic {
+    float: right;
+
+}
+
+#bigProfilePic {
+    hight: auto;
+    width: 200px;
+    box-shadow: 5px 5px 25px 5px #1d1e1f;
+}
+
+#factDIv {
+    width: 75%;
+}
+
+.project {
+    margin-bottom: 50px;
+}
+
+.projectPicDiv {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    width: auto;
+}
+
+
+.projectTextDiv {
+    padding: 20px;
+    text-align: center;
+}
+
+.projectPic {
+    width: 300px;
+    height: auto;
+    float: left;
+    padding:0px;
+
+}
+
+.projectPicDiv :hover {
+    box-shadow: 5px 5px 30px 0px #386591;
+}
+
+#vallaloggenPic {
+    margin-top: 35px;
+}
+
+.glyf {
+    font-size: 10em;
+    text-align: center;
+}
+
+.projectLink {
+    float: right;
+    height: 100%;
+    vertical-align: middle;
+    padding: 0px;
+}
+
+.gitProjectLink {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 120px;
+    height: auto;
 }
 
 #jokeDiv {
-    text-align: center; /*to center button*/
-    width: 100%;
-    margin: auto 0;
-    position: absolute;
+
 }
 
 #jokeform {
@@ -125,7 +219,8 @@ html, body {
 }
 
 #contactInfo {
-    position: absolute;
+    margin: 0 auto;
+    vertical-align: middle;
 }
 
 @media only screen and (max-width: 767px) {
@@ -133,8 +228,21 @@ html, body {
         font-size: 400%;
         padding-left: 0px;
     }
+    .hideOnPhone {
+        display: none;
+    }
     #socialMedia {
         display: none;
+    }
+    .page {
+        float: left
+    }
+    #aboutContent {
+        padding: 30px;
+    }
+    #bigProfilePic {
+        width: 100px;
+        hight: auto;
     }
     #jokeDiv {
         width: auto;
@@ -142,14 +250,4 @@ html, body {
 }
 h2 {
     text-align: center;
-}
-
-.changeOnDownScroll {
-    animation-name: onDownScroll;
-    animation-duration: 1s;
-}
-
-@keyframes onDownScroll {
-    from {height: 30%;}
-    to {height: 15%;}
 }
