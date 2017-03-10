@@ -9,8 +9,9 @@ window.onload = function() {
 
 function callServer() {
     var answer = document.getElementById("answerField").value;
+    console.log(answer);
     $.ajax({
-        type: "POST",
+        type: "GET",
         url: "http://localhost:3000/checkAnswer/"+ answer,
         success: checkAnswer
 
@@ -31,12 +32,14 @@ function addContacts(response) {
     removeQuestion()
     var parent = document.getElementById("contactInfo");
     var email = document.createElement("H2");
+    var phone = document.createElement("H3");
     email.textContent = response
+    phone.textContent = "070-287 12 36";
     parent.appendChild(email);
+    parent.appendChild(phone);
 }
 
 function removeQuestion() {
     var questionDiv = document.getElementById("jokeDiv");
     questionDiv.remove();
 }
-

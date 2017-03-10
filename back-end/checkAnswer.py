@@ -9,6 +9,7 @@ def index():
 
 @app.route("/checkAnswer/<answer>")
 def checkAnswer(answer):
+    answer.strip()
     email = "kristoffer.karlsson93@hotmail.com"
     if answer.lower() == "programmer":
         return email
@@ -16,3 +17,4 @@ def checkAnswer(answer):
 
 if __name__ == "__main__":
     app.run(host='localhost', port=3000, threaded=True)
+
