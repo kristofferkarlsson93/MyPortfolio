@@ -1,6 +1,10 @@
 html, body {
     overflow-x: hidden;
     background-color: #dddddd;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 
 #headerDiv {
@@ -17,6 +21,7 @@ html, body {
     text-align: center;
     padding-bottom: 0px;
     padding-top: 10px;
+    background-color: #dddddd;
 }
 
 #jumboContent {
@@ -57,7 +62,7 @@ html, body {
 
 .linkpic {
     height: 64px;
-    width: 64px;
+    width: auto;
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
@@ -76,6 +81,36 @@ html, body {
     padding: 0px;
 }
 
+#navigationMobile {
+    display: none;
+    font-size: 32px
+}
+
+.mobileMenuDiv {
+    width: 33%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+#person {
+    margin-left: 20px;
+    margin-right: 0px;
+    text-decoration: none;
+}
+#folder {
+    margin-left: 20px;
+    margin-right: 0px;
+    text-decoration: none;
+    text-align: center;
+}
+#mail {
+    margin-left: 20px;
+    margin-right: 0px;
+    text-decoration: none;
+    text-align: center;
+}
+
 #navigation {
     border-bottom: 0px;
     margin-bottom: 0px;
@@ -86,24 +121,25 @@ html, body {
     text-align: center;
     font-weight: bold;
     margin-left: 0px;
-
 }
 
 #menu li {
     margin: 0px;
     padding: 0px;
     font-size: 150%;
+    width: 33%;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: #3b71a5;
-    /*#025aa5*/
+    /*The navbar*/
+    color: #769cc1;
 }
 
 #mainContent {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 #scrollable {
@@ -116,15 +152,21 @@ html, body {
     width: 100vw;
     height: 100vh;
     display: inline-block;
+    float: left;
+
 }
 
 .pageContent {
     width: 75%;
     height: auto;
     background-color: #769cc1;
-    margin: 0 auto;
+    margin: auto;
     padding-left: 0px;
-    box-shadow: 5px 5px 25px 5px #888888;
+    box-shadow: 2px 2px 10px 2px #888888;
+}
+
+.firstElementOnPage{
+    margin-top: 45px;
 }
 
 #aboutContent {
@@ -140,7 +182,11 @@ html, body {
 #bigProfilePic {
     hight: auto;
     width: 200px;
-    box-shadow: 5px 5px 25px 5px #1d1e1f;
+    box-shadow: 1px 1px 10px 1px #1d1e1f;
+}
+
+#cvDiv {
+    margin-left: 10px;
 }
 
 #factDIv {
@@ -163,6 +209,19 @@ html, body {
 .list-group-item {
     background-color: #769cc1;
 }
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.minOnPhone h4 {
+    margin-top: 0px;
+}
+
+#projects {
+    height: 100vh;
+}
+
 .project {
     margin-bottom: 50px;
 }
@@ -171,9 +230,7 @@ html, body {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
-    width: auto;
 }
-
 
 .projectTextDiv {
     padding: 20px;
@@ -183,9 +240,8 @@ html, body {
 .projectPic {
     width: 300px;
     height: auto;
-    float: left;
     padding:0px;
-
+    margin: 0 auto;
 }
 
 .projectPicDiv :hover {
@@ -216,31 +272,76 @@ html, body {
     height: auto;
 }
 
-#jokeDiv {
+#contactContent {
+    margin-bottom: 20px;
+    height: auto;
+}
+
+.link {
+    display: inline-block;
+}
+
+#media {
+    margin-top: 40px;
     text-align: center;
 }
 
-#jokeform {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+#linkedContact {
+    height: 74px;
 }
 
-#contact form {
-    width: 50%;
-    margin: auto;
-}
-.buttonClass {
-    font-size: 30px;
-}
-
-#contactInfo {
-    margin: 0 auto;
-    height: 50vh;
+#email {
     text-align: center;
-    vertical-align: middle;
+
+    float: left;
+    position: absolute;
+    margin: 0 auto
 }
+
+#emailText {
+    margin-left: 12%;
+}
+
+#handStandDiv {
+    text-align: center;
+    float: right;
+    margin-top: -65px;
+    margin-bottom: 15px;
+}
+
+#handStandPic {
+    max-width: 50%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 999px) {
+    #aboutPic {
+        margin-right: 5px;
+    }
+    #email {
+        margin-top: 20px;
+        float: none;
+        position: relative;
+    }
+    #emailText {
+        margin: 0 auto;
+    }
+    #handStandPic {
+        max-width: 25%;
+    }
+    #handStandDiv {
+        margin-top: 30px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
+    #folder {
+        padding-left: 7px;
+    }
+    #mail {
+        padding-left: 16px;
+    }
     .page{
         float: left;
     }
@@ -251,11 +352,26 @@ html, body {
         width: 100px;
         margin-right: 10px;
     }
+    .gitProjectLink {
+        width: 75px;
+        float: none;
+        margin: 0 auto;
+        margin-right: 230px;
+    }
+    .glyf {
+        font-size: 10em;
+        margin-left: 110px;
+    }
 }
 @media only screen and (max-width: 767px) {
     #headerText {
         font-size: 400%;
         padding-left: 0px;
+    }
+    #jumboContent {
+        font-size: 9px;
+        margin-bottom: -27px;
+        margin-top: -25px;
     }
     .hideOnPhone {
         display: none;
@@ -263,16 +379,49 @@ html, body {
     #socialMedia {
         display: none;
     }
+    #menuDiv {
+        display: none;
+    }
+    #navigationMobile {
+        display: inline;
+    }
+    #folder {
+        padding-left: 20px;
+    }
+    #mail .h3, h3 {
+        font-size: 16px;
+    }
+    #handStandDiv {
+        text-align: center;
+    }
+    #mainContent {
+        margin-top: -50px;
+    }
+    #scrollable {
+        margin-top: -15px;
+    }
     .page {
         float: left
     }
     #aboutContent {
         padding: 30px;
     }
+    #aboutPic {
+        margin-right: 0px;
+    }
     #bigProfilePic {
-        width: 60px;
+        width: 100px;
         hight: auto;
         box-shadow: none;
+    }
+    .gitProjectLink {
+        width: 75px;
+        float: none;
+        margin: 0 auto;
+        margin-right: 80px;
+    }
+    .glyf {
+        margin-left: 0px;
     }
     .pageContent{
         box-shadow: none;
@@ -281,12 +430,8 @@ html, body {
     .nav-tabs>li>a{
         font-size: 0.7em;
     }
-    .projectPic {
-        width: 150px;
-        margin-left: 75px;
-    }
-    #jokeDiv {
-        width: auto;
+    .projectTextDiv {
+        padding: 0px;
     }
 }
 h2 {

@@ -1,7 +1,6 @@
 /**
  * Created by Kristoffer on 2017-01-25.
  */
-
 $(document).ready(function() {
     $(".menuItem").click(function(event) {
 
