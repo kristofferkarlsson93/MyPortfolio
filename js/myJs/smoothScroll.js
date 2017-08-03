@@ -2,15 +2,26 @@
  * Created by Kristoffer on 2017-01-25.
  */
 $(document).ready(function() {
+
     $(".menuItem").click(function(event) {
 
-        //On bigscreen-devices.
-
         var $link = $(this).attr("href");
+
+
+
         $("#mainContent").animate({
             scrollLeft: $("#mainContent").scrollLeft() + $($link).offset().left
         }, 500);
+
+        console.log($("#scrollable").offset().top);
+        $("#mainContent").scrollTop(0);
+
+        $("#mainContent").animate({
+            scrollTop: 0
+        }, 500);
+
         event.preventDefault();
+
 
     });
 });

@@ -11,5 +11,7 @@ window.onload = function () {
     link.onclick = showClue;
     input.onclick = markForm;
     //page.onscroll = changeHeaderSize;*/
+
+
 }
 
