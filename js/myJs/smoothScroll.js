@@ -13,7 +13,6 @@ $(document).ready(function() {
             scrollLeft: $("#mainContent").scrollLeft() + $($link).offset().left
         }, 500);
 
-        console.log($("#scrollable").offset().top);
         $("#mainContent").scrollTop(0);
 
         $("#mainContent").animate({
