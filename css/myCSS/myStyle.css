@@ -254,7 +254,7 @@ html, body {
     margin: 0 auto;
 }
 
-#inaviconPic {
+.phonePic {
     max-width: 50%;
 }
 
