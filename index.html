@@ -37,6 +37,8 @@
     <script src="js/myJs/showClue.js"></script>
     <script src="js/myJs/markForm.js"></script>
     <script src="js/myJs/header.js"></script>
+    <script src="js/myJs/competenceDisplayer.js"></script>
+    <script src="js/myJs/competences.js"></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -113,61 +115,16 @@
                                 and I am currently working as a web developer. I mainly work with javascript and PHP.
                                  In my spare time I ski and work on some hobby projects (preferably something that involves App development).
                                 Feel free to contact me by email or LinkedIn.</p>
-
                             </div>
-                            <div id="cvDiv" class="row">
-                                <form class="form-group" target="_blank" action="media/cv/CV-English.pdf">
-                                    <input type="submit" class="buttonClass col-md-2 btn btn-primary btn-md"
-                                           value="Read CV" />
-                                </form>
-                            </div>
-                        </div>
-                        <div id="factDIv" class="row">
-                            <ul class="nav nav-tabs">
-                                <li class="active test"><a data-toggle="tab" href="#skills">Programming skills</a></li>
-                                <li class="test"><a data-toggle="tab" href="#competence">Other competences</a></li>
-                            </ul>
-                            <div class="tab-content">
-                                <div id="skills" class="tab-pane fade in active row">
-                                    <div class="col-md-4 minOnPhone">
-                                        <h4>Good</h4>
-                                        <ul class="list-group">
-                                            <li class="list-group-item">HTML</li>
-                                            <li class="list-group-item">CSS</li>
-                                            <li class="list-group-item">JavaScript</li>
-                                            <li class="list-group-item">PHP</li>                                            
-                                            
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4 minOnPhone">
-                                        <h4>Intermediate</h4>
-                                        <ul class="list-group">
-                                            <li class="list-group-item">Python</li>                                            
-                                            <li class="list-group-item">ActionScript</li>
-                                            <li class="list-group-item">Java</li>
-                                            <li class="list-group-item">App development (Android studio & React Native)</li>                                            
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4 minOnPhone">
-                                        <h4>Familiar</h4>
-                                        <ul class="list-group">
-                                            <li class="list-group-item">C++</li>
-                                            <li class="list-group-item">Git</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div id="competence" class="tab-pane fade row">
-                                    <div class="col-md-4 minOnPhone">
-                                        <ul class="list-group">
-                                            <li class="list-group-item">UX-design</li>
-                                            <li class="list-group-item">Cognitive psychology</li>
-                                            <li class="list-group-item">Cognitive Neuroscience</li>
-                                            <li class="list-group-item">Agile methods</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+						</div>
+						<div class="competenceContainer">
+							<div class="competences col-md-8">
+							<!-- Content filled with js -->
+							</div>
+							<div class="competenceDetailsContainer col-md-8">
+								Click on an area to get more info about my experience in it.
+							</div>
+						</div>
                     </div>
                 </div>
                 <div id="projects" class="col-md-4 page">
@@ -361,7 +318,10 @@
                        </div>
                         <div class="row">
                             <div id="email" class="col-md-8">
-                                <h3 id="emailText">karlsson.kristoffer93@gmail.com</br>070-287 12 36</h3>
+								<h3 id="emailText">karlsson.kristoffer93@gmail.com</br>070-287 12 36</h3>
+								<a href="./media/cv/CV-English.pdf" target="_blank" >
+									<button type="button" class="myButton">Read my CV</button>
+								</a>
                             </div>
                             <div id="handStandDiv" class="col-md-4">
                                 <img id="handStandPic" src="media/myhandstand.png" class=".img-responsive">

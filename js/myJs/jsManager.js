@@ -1,3 +1,4 @@
+
 /**
  * Created by Kristoffer on 2017-03-11.
  */
@@ -11,6 +12,7 @@ window.onload = function () {
     link.onclick = showClue;
     input.onclick = markForm;
     //page.onscroll = changeHeaderSize;*/
+    displayCompetences();
 
 
 }
