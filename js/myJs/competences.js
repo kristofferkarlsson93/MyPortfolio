@@ -7,13 +7,13 @@ competences = [
   },
   {
     name: 'React',
-    story: 'I am Using React during my spare time when building web-applications but have not jet done anything bigger.',
+    story: 'I am Using React during my spare time when building web-applications.',
     level: 'Intermediate',
     area: 'Frontend'    
   },
   {
     name: 'React Native', 
-    story: 'I have made a few hobby apps using React Native. I am a big fan of the tool. I most often use it in combination with react navigation and redux.',
+    story: 'I have made a few hobby apps using React Native, and i really like it. I most often use it in combination with react navigation and redux.',
     level: 'Intermediate',
     area: 'Frontend'    
   },
@@ -31,7 +31,7 @@ competences = [
   },
   {
     name: 'Nodejs',
-    story: 'I am using node in my current hobby-project, and really like the flexibility.',
+    story: 'I am using node in my current hobby-project, and really like the flexibility, and the design-opportunity it offers',
     level: 'intermediate',
     area: 'backEnd'
   },
@@ -49,7 +49,7 @@ competences = [
   },
   {
     name: 'Python',
-    story: 'Python was my first programming language to use. I have mostly done command-line-tools, and minor web projects with it.',
+    story: 'Python was my first programming language to use. I have mostly done command-line-tools, and some minor web project with it.',
     level: 'Intermediate',
     area: 'Backend',
   },
@@ -61,7 +61,7 @@ competences = [
   },
   {
     name: 'Agile methods',
-    story: 'The agile way of working really suits my personality, in my job we shift a lot between Scrum and Kanban',
+    story: 'The agile way of working really suits my personality.',
     level: '',
     area: 'workMethods',
   },
@@ -73,13 +73,13 @@ competences = [
   },
   {
     name: 'UX-design',
-    story: 'I origin from the UX-field. and really like that way of working. I am very familiar with the design-process and always work to facilitate good design',
+    story: 'I origin from the UX-field. and really like that way of working. I am familiar with the design-process and always work to facilitate good design',
     level: 'Intermediate',
     area: 'workMethods',
   },
   {
     name: 'Cognitive psychology',
-    story: 'In my bachelor degree in cognitive science a big focus was the cognitive psychology to better understand behaviour',
+    story: 'In my bachelor degree in cognitive science a large focus was the cognitive psychology to better understand behaviour',
     level: 'Intermediate',
     area: 'psychology',
   },

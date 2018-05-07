@@ -307,6 +307,7 @@ p{
 }
 
 .projectPicDiv :hover {
+    border-radius: 20px;
     box-shadow: 5px 5px 30px 0px #386591;
 }
 
